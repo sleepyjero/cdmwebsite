@@ -139,57 +139,105 @@ header h1 {
     font-size: 1rem;
 }
 
-/* About Us Content */
-#about {
-    padding: 40px;
-    background-color: #f9f9f9;
+/* About Section */
+.about-content {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-content h2 {
+    color: #0b4d10;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-#about .about-header h2 {
+.about-content p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.about-content ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Seal Section */
+.seal {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 3px solid #0b4d10;
+}
+
+.seal h3 {
     color: #0b4d10;
     font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.seal-img {
+    width: 150px;
     margin-bottom: 20px;
 }
 
-#about .about-content p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 20px;
+.seal p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 /* Footer */
 footer {
     background-color: #0b4d10;
     color: white;
-    padding: 10px;
+    padding: 15px 20px;
     text-align: center;
+    font-size: 0.9rem;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Responsive design for mobile */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .nav-links ul li {
-        margin: 10px 0;
-    }
-
-    .mission-vision {
+    header {
         flex-direction: column;
+        text-align: center;
     }
 
-    .welcome-text h2 {
-        font-size: 1.5rem;
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    /* Adjust about content layout for small screens */
-    #about .about-header h2 {
-        font-size: 1.5rem;
+    .about-content h2 {
+        font-size: 2rem;
     }
 
-    #about .about-content p {
+    .about-content p {
         font-size: 1rem;
+    }
+
+    .seal h3 {
+        font-size: 1.8rem;
+    }
+
+    .seal-img {
+        width: 120px;
     }
 }
 
@@ -446,6 +494,70 @@ footer p {
     }
 
     form button {
+        font-size: 1rem;
+    }
+}
+/* Campus Section */
+.campus {
+    text-align: center;
+    padding: 40px;
+}
+
+.campus-map-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust the height to your preferred size */
+    max-width: 100%; /* Ensures the container doesn’t grow too large on wider screens */
+    margin: 0 auto 30px;
+    overflow: hidden; /* Keeps the image inside the container */
+}
+
+.campus-map-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the whole image fits inside the container without cropping */
+    max-width: 100%; /* Prevents the image from becoming too big */
+    max-height: 100%; /* Prevents the image from becoming too big vertically */
+}
+
+
+.map-description h2 {
+    color: #0b4d10;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.map-description p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #0b4d10;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .campus-map-container {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+
+    .map-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .map-description p {
         font-size: 1rem;
     }
 }
